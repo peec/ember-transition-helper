@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.0.4](https://github.com/peec/ember-route-action/tree/v0.0.4) (2016-02-04)
+[Full Changelog](https://github.com/peec/ember-route-action/compare/v0.0.3...v0.0.4)
+
 ## [v0.0.3](https://github.com/peec/ember-route-action/tree/v0.0.3) (2016-02-04)
 [Full Changelog](https://github.com/peec/ember-route-action/compare/v0.0.2...v0.0.3)
 
