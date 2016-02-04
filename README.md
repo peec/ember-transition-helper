@@ -8,7 +8,6 @@ Do you want to do this?
 Then this addon is for you.
 
 
-
 ## Installation
 
 * `git clone` this repository
