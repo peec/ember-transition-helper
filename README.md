@@ -3,9 +3,13 @@
 
 Do you want to do this?
 
-`{{some-link click=(transitionTo "test" 'arg-to-route')}}`
+`{{some-link click=(transition-to "test" 'arg-to-route')}}`
 
-Then this addon is for you.
+Then this addon is for you. This is a very simple addon that gives you access to a helper (`transition-to`).
+
+## Requirements
+
+Requires Ember `2.3.0+` ( we use `Ember.getOwner` API, which was introduced in 2.3.0 ).
 
 
 ## Installation
