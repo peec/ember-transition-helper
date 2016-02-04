@@ -1,6 +1,11 @@
 # Ember-route-action
 
-This README outlines the details of collaborating on this Ember addon.
+Do you want to do this?
+
+`{{some-link click=(transitionTo "test" 'arg-to-route')}}`
+
+Then this addon is for you.
+
 
 ## Installation
 
