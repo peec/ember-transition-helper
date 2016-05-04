@@ -1,21 +1,21 @@
-<h1>Here are a few ways to use <code>transitionTo</code></h1>
+<h1>Here are a few ways to use <code>transition-to</code></h1>
 
 <p><code>ember-route-action</code> allows use the router transitionTo without a link-to helper.</p>
 
 <ul>
-  <li><a onclick={{transitionTo "test" 'some-arg'}}>Go to test route.</a></li>
-  <li>{{some-link click=(transitionTo "test" 'arg-to-route')}}</li>
-  <li>{{some-link action=(transitionTo "test" 'arg-to-route')}}</li>
+  <li><a onclick={{transition-to "test" 'some-arg'}}>Go to test route.</a></li>
+  <li>{{some-link click=(transition-to "test" 'arg-to-route')}}</li>
+  <li>{{some-link action=(transition-to "test" 'arg-to-route')}}</li>
 </ul>
 
 
 <h2>The usage</h2>
 <pre>
-&lt;a onclick=\{{transitionTo "test" 'some-arg'}}&gt;Go to test route.&lt;/a&gt;
+&lt;a onclick=\{{transition-to "test" 'some-arg'}}&gt;Go to test route.&lt;/a&gt;
 
-\{{some-link click=(transitionTo "test" 'arg-to-route')}}
+\{{some-link click=(transition-to "test" 'arg-to-route')}}
 
-\{{some-link action=(transitionTo "test" 'arg-to-route')}}
+\{{some-link action=(transition-to "test" 'arg-to-route')}}
 </pre>
 
 <h2>The sample component</h2>
