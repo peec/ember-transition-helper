@@ -1,5 +1,5 @@
 {
-  "name": "ember-route-action",
+  "name": "ember-transition-helper",
   "version": "0.0.5",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/peec/ember-route-action",
+  "repository": "https://github.com/peec/ember-transition-helper",
   "engines": {
     "node": ">= 0.10.0"
   },
