@@ -1,4 +1,4 @@
-# Ember-route-action [![Build Status](https://travis-ci.org/peec/ember-route-action.svg)](https://travis-ci.org/peec/ember-route-action) [![Ember Observer Score](http://emberobserver.com/badges/ember-route-action.svg)](http://emberobserver.com/addons/ember-route-action)
+# ember-transition-helper [![Build Status](https://travis-ci.org/peec/ember-route-action.svg)](https://travis-ci.org/peec/ember-route-action) [![Ember Observer Score](http://emberobserver.com/badges/ember-route-action.svg)](http://emberobserver.com/addons/ember-route-action)
 
 
 Do you want to do this?
