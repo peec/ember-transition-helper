@@ -1,1 +1,1 @@
-export { default, transitionTo } from 'ember-route-action/helpers/transition-to';
+export { default, transitionTo } from 'ember-transition-helper/helpers/transition-to';

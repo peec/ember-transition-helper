@@ -1,5 +1,5 @@
 {
-  "name": "ember-route-action",
+  "name": "ember-transition-helper",
   "dependencies": {
     "ember": "2.3.0",
     "ember-cli-shims": "0.1.0",
