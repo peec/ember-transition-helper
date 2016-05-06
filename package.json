@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/peec/ember-route-action",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "https://github.com/peec",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
