@@ -3,7 +3,7 @@
 <p><code>ember-transition-helper</code> allows use the router transitionTo without a link-to helper.</p>
 
 <ul>
-  <li><a onclick={{transition-to "test" 'some-arg'}}>Go to test route.</a></li>
+  <li><a name="test click" onclick={{transition-to "test" 'some-arg'}}>Go to test route.</a></li>
   <li>{{some-link click=(transition-to "test" 'arg-to-route')}}</li>
   <li>{{some-link action=(transition-to "test" 'arg-to-route')}}</li>
 </ul>
