@@ -18,9 +18,7 @@ https://github.com/rwjblue/ember-getowner-polyfill
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+* `ember install ember-transition-helper`
 
 ## Running
 
