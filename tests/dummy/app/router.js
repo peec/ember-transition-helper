@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('tabs', { path: 'tabs/' });
+  this.route('test', { path: 'test/:arg' });
 });
 
 export default Router;

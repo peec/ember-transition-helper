@@ -6,7 +6,7 @@ import _transformQueryParams from '../utils/transform-query-params';
 
 export default Helper.extend({
   router: computed(function() {
-    getOwner(this).lookup('router:main');
+    return getOwner(this).lookup('router:main');
   }).readOnly(),
 
   compute([routeName, ...params]) {
@@ -15,7 +15,7 @@ export default Helper.extend({
     return function(...invocationArgs) {
       const args = params.concat(invocationArgs);
       const transitionArgs = params.length ? [routeName, ...params] : [routeName];
-      router.transitionTo.apply(router, _transformQueryParams(transitionArgs));
+      router.transitionTo(..._transformQueryParams(transitionArgs));
       return args;
     };
   }
