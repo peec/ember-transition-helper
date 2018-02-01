@@ -1,4 +1,4 @@
-import transformQueryParams from '../../../utils/transform-query-params';
+import transformQueryParams from 'dummy/utils/transform-query-params';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | transform query params');

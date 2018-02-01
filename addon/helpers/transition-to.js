@@ -1,14 +1,17 @@
-import Ember from 'ember';
+import { getOwner } from '@ember/application';
+import Helper from '@ember/component/helper';
+import { assert } from '@ember/debug';
+import { computed } from '@ember/object';
 import _transformQueryParams from '../utils/transform-query-params';
 
-export default Ember.Helper.extend({
-  router: Ember.computed(function() {
-    return Ember.getOwner(this).lookup('router:main');
+export default Helper.extend({
+  router: computed(function() {
+    getOwner(this).lookup('router:main');
   }).readOnly(),
 
   compute([routeName, ...params]) {
-    const router = Ember.get(this, 'router');
-    Ember.assert('[ember-transition-helper] Unable to lookup router', router);
+    const router = this.get('router');
+    assert('[ember-transition-helper] Unable to lookup router', router);
     return function(...invocationArgs) {
       const args = params.concat(invocationArgs);
       const transitionArgs = params.length ? [routeName, ...params] : [routeName];
