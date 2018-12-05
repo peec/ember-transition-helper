@@ -3,23 +3,27 @@
 <p><code>ember-transition-helper</code> allows use the router transitionTo without a link-to helper.</p>
 
 <ul>
-  <li><a name="test-click" onclick={{transition-to "test" 'some-arg'}}>Go to test route.</a></li>
-  <li>{{some-link click=(transition-to "test" 'arg-to-route') text='Click me'}}</li>
-  <li>{{#some-link action=(transition-to "test" 'arg-to-route')}}Another way{{/some-link}}</li>
-  <li>{{#some-link
-    class='test-query-params'
-    action=(transition-to "tabs" (query-params tab='X'))
-  }}Query params!{{/some-link}}</li>
+  <li><a name="test-click" onclick={{transition-to "test" "some-arg"}}>Go to test route.</a></li>
+  <li>{{some-link click=(transition-to "test" "arg-to-route") text="Click me"}}</li>
+  <li>{{#some-link action=(transition-to "test" "arg-to-route")}}Another way{{/some-link}}</li>
+  <li>
+    {{#some-link
+      class="test-query-params"
+      action=(transition-to "tabs" (query-params tab="X"))
+    }}
+      Query params!
+    {{/some-link}}
+  </li>
 </ul>
 
 
 <h2>The usage</h2>
 <pre>
-&lt;a onclick=\{{transition-to "test" 'some-arg'}}&gt;Go to test route.&lt;/a&gt;
+  &lt;a onclick=\{{transition-to "test" "some-arg"}}&gt;Go to test route.&lt;/a&gt;
 
-\{{some-link click=(transition-to "test" 'arg-to-route')}}
+  \{{some-link click=(transition-to "test" "arg-to-route")}}
 
-\{{some-link action=(transition-to "test" 'arg-to-route')}}
+  \{{some-link action=(transition-to "test" "arg-to-route")}}
 
-\{{some-link action=(transition-to "test" 'some-arg' (query-params tab='one'))}}
+  \{{some-link action=(transition-to "test" "some-arg" (query-params tab="one"))}}
 </pre>
