@@ -1,30 +1,27 @@
-import { test } from 'qunit';
-import moduleForAcceptance from '../../tests/helpers/module-for-acceptance';
+import { module, test } from 'qunit';
+import { visit, currentURL, click } from '@ember/test-helpers';
+import { setupApplicationTest } from 'ember-qunit';
 
-moduleForAcceptance('Acceptance | transition to');
+module('Acceptance | transitio to', function(hooks) {
+  setupApplicationTest(hooks);
 
-test('go back and forth', function(assert) {
-  visit('/');
+  test('go back and forth', async function (assert) {
+    await visit('/');
 
-  click('a[name="test-click"]');
+    await click('a[name="test-click"]');
 
-  andThen(function() {
     assert.equal(currentURL(), '/test/some-arg');
 
-    click('a[name="go-back"]');
+    await click('a[name="go-back"]');
 
-    andThen(function() {
-      assert.equal(currentURL(), '/');
-    });
+    assert.equal(currentURL(), '/');
   });
-});
 
-test('pass query parameter', function(assert) {
-  visit('/');
+  test('pass query parameter', async function (assert) {
+    await visit('/');
 
-  click('.test-query-params');
+    await click('.test-query-params');
 
-  andThen(function() {
     assert.equal(currentURL(), '/tabs?tab=X');
   });
 });
