@@ -1,5 +1,31 @@
 # Change Log
 
+## [1.0.1](https://github.com/peec/ember-transition-helper/tree/1.0.1) (2018-12-06)
+[Full Changelog](https://github.com/peec/ember-transition-helper/compare/1.0.0...1.0.1)
+
+**Closed issues:**
+
+- 2.18.0 dependency checker deprecation issue [\#12](https://github.com/peec/ember-transition-helper/issues/12)
+
+**Merged pull requests:**
+
+- 3.5 upgrade [\#17](https://github.com/peec/ember-transition-helper/pull/17) ([PoslinskiNet](https://github.com/PoslinskiNet))
+- Set version to 1.0.0 in package.json [\#15](https://github.com/peec/ember-transition-helper/pull/15) ([jacobq](https://github.com/jacobq))
+
+## [1.0.0](https://github.com/peec/ember-transition-helper/tree/1.0.0) (2018-02-14)
+[Full Changelog](https://github.com/peec/ember-transition-helper/compare/v0.0.6...1.0.0)
+
+**Closed issues:**
+
+- Should it support `query-params` helper? [\#9](https://github.com/peec/ember-transition-helper/issues/9)
+- Support for multiple query  parameters? [\#7](https://github.com/peec/ember-transition-helper/issues/7)
+- ember-route-action with Ember-cli 1.13.13 [\#3](https://github.com/peec/ember-transition-helper/issues/3)
+- Name change? May be easily confused with ember-route-action-helper [\#2](https://github.com/peec/ember-transition-helper/issues/2)
+
+**Merged pull requests:**
+
+- Fresh reboot [\#14](https://github.com/peec/ember-transition-helper/pull/14) ([jacobq](https://github.com/jacobq))
+
 ## [v0.0.6](https://github.com/peec/ember-transition-helper/tree/v0.0.6) (2016-05-06)
 [Full Changelog](https://github.com/peec/ember-transition-helper/compare/v0.0.5...v0.0.6)
 
