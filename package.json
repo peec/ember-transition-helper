@@ -12,6 +12,7 @@
     "doc": "doc",
     "test": "tests"
   },
+  "repository": "https://github.com/peec/ember-transition-helper",
   "scripts": {
     "build": "ember build",
     "lint:hbs": "ember-template-lint .",
