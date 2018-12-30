@@ -1,4 +1,9 @@
-# ember-transition-helper [![Build Status](https://travis-ci.org/peec/ember-transition-helper.svg)](https://travis-ci.org/peec/ember-transition-helper) [![Ember Observer Score](http://emberobserver.com/badges/ember-transition-helper.svg)](http://emberobserver.com/addons/ember-transition-helper)
+# ember-transition-helper
+
+[![Build Status](https://api.travis-ci.org/peec/ember-transition-helper.svg?branch=master)](http://travis-ci.org/peec/ember-transition-helper)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-transition-helper.svg)](https://emberobserver.com/addons/ember-transition-helper)
+[![NPM package info for ember-transition-helper](https://img.shields.io/npm/dm/ember-transition-helper.svg)](http://npmjs.com/package/ember-transition-helper)
+[![License info](https://img.shields.io/npm/l/ember-transition-helper.svg)](http://npmjs.com/package/ember-transition-helper)
 
 Do you want to do this?
 
