@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.2](https://github.com/peec/ember-transition-helper/tree/1.0.2) (2018-12-30)
+[Full Changelog](https://github.com/peec/ember-transition-helper/compare/1.0.1...1.0.2)
+
+**Implemented enhancements:**
+
+- Ember 3.6 upgrade [\#18](https://github.com/peec/ember-transition-helper/pull/18) ([PoslinskiNet](https://github.com/PoslinskiNet))
+
 ## [1.0.1](https://github.com/peec/ember-transition-helper/tree/1.0.1) (2018-12-06)
 [Full Changelog](https://github.com/peec/ember-transition-helper/compare/1.0.0...1.0.1)
 
