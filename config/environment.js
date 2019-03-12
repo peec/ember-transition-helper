@@ -1,5 +1,12 @@
 'use strict';
 
 module.exports = function(/* environment, appConfig */) {
-  return { };
+  return {
+    'ember-transition-helper': {
+      filters: {
+        'constructor.name': ['MouseEvent'],
+        'renderer': true
+      }
+    }
+  };
 };
