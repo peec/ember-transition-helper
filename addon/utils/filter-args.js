@@ -13,7 +13,7 @@ const _applyFilters = (filters, arg) => {
     const conditions = filters[prop];
 
     if (!(conditions instanceof Array)) {
-      return !get(arg, prop);
+      return arg && !get(arg, prop);
     }
 
     return conditions.reduce((prev, c) => {
