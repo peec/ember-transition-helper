@@ -1,1 +1,98 @@
+{{page-title "Dummy"}}
+
+<h2>Transitions using LinkTo component</h2>
+<ul>
+  <li>
+    <LinkTo
+      @route="single"
+      @model="1"
+      data-test-id="link-to-single-1"
+    >
+      /single/1 (the conventional way)
+    </LinkTo>
+  </li>
+  <li>
+    <LinkTo
+      @route="single"
+      @model="2"
+      data-test-id="link-to-single-2"
+    >
+      /single/2 (the conventional way)
+    </LinkTo>
+  </li>
+  <li>
+    <LinkTo
+      @route="double"
+      @models={{array "first" "second"}}
+      data-test-id="link-to-double"
+    >
+      /double/first/second (the conventional way)
+    </LinkTo>
+  </li>
+  <li>
+    <LinkTo
+      @route="tabs"
+      @query={{hash tab="foo"}}
+      data-test-id="link-to-foo"
+    >
+      /tabs?tab=foo (the conventional way)
+    </LinkTo>
+  </li>
+  <li>
+    <LinkTo
+      @route="tabs"
+      @query={{hash tab="bar"}}
+      data-test-id="link-to-bar"
+    >
+      /tabs?tab=bar (the conventional way)
+    </LinkTo>
+  </li>
+</ul>
+
+<h2>Transitions using transition-to helper</h2>
+<ul>
+  <li>
+    <a
+      {{on "click" (transition-to "single" 1)}}
+      href="#"
+      data-test-id="transition-to-single-1"
+    >/test/1</a>
+  </li>
+  <li>
+    <a
+      {{on "click" (transition-to "single" 2)}}
+      href="#"
+      data-test-id="transition-to-single-2"
+    >/test/2</a>
+  </li>
+  <li>
+    <a
+      {{on "click" (transition-to "double" "x" "y")}}
+      href="#"
+      data-test-id="transition-to-double"
+    >/double/x/y#</a>
+  </li>
+  <li>
+    <a
+      {{on "click" (transition-to "tabs" queryParams=(hash tab="foo"))}}
+      href="#"
+      data-test-id="transition-to-foo"
+    >/tabs?tab=foo#</a>
+  </li>
+  <li>
+    <a
+      {{on "click" (transition-to "tabs" queryParams=(hash tab="bar"))}}
+      href="#"
+      data-test-id="transition-to-bar"
+    >/tabs?tab=bar#</a>
+  </li>
+  <li>
+    <a
+      {{on "click" (transition-to "tabs" preventDefault=true queryParams=(hash tab="preventDefault"))}}
+      href="#"
+      data-test-id="transition-to-preventDefault"
+    >/tabs?tab=preventDefault</a>
+  </li>
+</ul>
+
 {{outlet}}

@@ -1,22 +1,33 @@
-import { getOwner } from '@ember/application';
 import Helper from '@ember/component/helper';
-import { assert } from '@ember/debug';
-import { computed } from '@ember/object';
-import _transformQueryParams from '../utils/transform-query-params';
+import { inject as service } from '@ember/service';
 
-export default Helper.extend({
-  router: computed(function() {
-    return getOwner(this).lookup('router:main');
-  }).readOnly(),
+export default class TransitionToHelper extends Helper {
+  @service router;
 
-  compute([routeName, ...params]) {
-    const router = this.get('router');
-    assert('[ember-transition-helper] Unable to lookup router', router);
-    return function(...invocationArgs) {
-      const args = params.concat(invocationArgs);
-      const transitionArgs = params.length ? [routeName, ...params] : [routeName];
-      router.transitionTo(..._transformQueryParams(transitionArgs));
-      return args;
+  compute(positional, named) {
+    const router = this.router;
+    return function (event) {
+      if (named.preventDefault) {
+        event.preventDefault();
+      }
+      const [routeName, ...positionalParams] = positional;
+      // Example usage of RouterService API:
+      //   this.router.transitionTo('post', object, { queryParams: { showDetails: true }});
+      //   this.router.transitionTo('posts', { queryParams: { sort: 'title' }});
+      const { queryParams } = named;
+      if (queryParams) {
+        if (positionalParams.length > 0) {
+          router.transitionTo(routeName, ...positionalParams, { queryParams });
+        } else {
+          router.transitionTo(routeName, { queryParams });
+        }
+      } else {
+        if (positionalParams.length > 0) {
+          router.transitionTo(routeName, ...positionalParams);
+        } else {
+          router.transitionTo(routeName);
+        }
+      }
     };
   }
-});
+}
