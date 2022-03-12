@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
 
-export default Controller.extend({
-  queryParams: ['tab']
-});
+export default class TabsController extends Controller {
+  queryParams = ['tab'];
+}

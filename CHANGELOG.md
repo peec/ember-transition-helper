@@ -1,5 +1,13 @@
 # Change Log
 
+## [2.0.0](https://github.com/peec/ember-transition-helper/tree/2.0.0) (2021-03-04)
+[Full Changelog](https://github.com/peec/ember-transition-helper/compare/1.0.2...2.0.0)
+
+- Ember 4.2 upgrade
+- Drop old node (<12) and ember versions (<3.24)
+- Take `queryParams` as named parameter instead of using (deprecated/removed) `query-params` helper
+- Run CI / tests thru GitHub Actions instead of TravisCI
+
 ## [1.0.2](https://github.com/peec/ember-transition-helper/tree/1.0.2) (2018-12-30)
 [Full Changelog](https://github.com/peec/ember-transition-helper/compare/1.0.1...1.0.2)
 
